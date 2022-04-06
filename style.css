@@ -1,4 +1,4 @@
-body.html {
+body, html {
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -10,8 +10,55 @@ body.html {
 
 .container {
     width: 600px;
-    margin: 50px;
+    margin: 50px auto;
+    color: whitesmoke;
     border: 5px solid black;
     box-sizing: border-box;
     padding: 5px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "nav main"
+        "footer footer";
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1.3fr;
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: teal;
+    padding: 20px 0;
+}
+
+aside {
+    grid-area: aside;
+    background-color: brown;
+    padding: 60px 0;
+}
+
+nav {
+    grid-area: nav;
+    background-color: springgreen;
+    padding: 100px 0;
+}
+
+main {
+    grid-area: main;
+    background-color: burlywood;
+    box-sizing: border-box;
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

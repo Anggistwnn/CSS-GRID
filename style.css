@@ -74,8 +74,7 @@ html, body {
     width: 60%;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: 100px 25% 200px;
-    grid-template-rows: 100px;
+    grid-template-columns: 1fr max-content 1fr;
 }
 
 .item {

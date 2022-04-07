@@ -1,4 +1,4 @@
-body, html {
+/* body, html {
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -61,4 +61,30 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 100px 25% 200px;
+    grid-template-rows: 100px;
+}
+
+.item {
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: thistle;
 }

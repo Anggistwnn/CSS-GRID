@@ -63,8 +63,9 @@ main {
     align-items: center;
 } */
 
+/* Akhir dari file latihan Grid.html */
 
-html, body {
+/* html, body {
     margin: 0;
     padding: 0;
     background-color: aliceblue;
@@ -74,7 +75,7 @@ html, body {
     width: 60%;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: 1fr max-content 1fr;
+    grid-template-columns: 1fr minmax(200px, 300px) 1fr;
 }
 
 .item {
@@ -86,4 +87,34 @@ html, body {
 
 .item:nth-child(even) {
     background-color: thistle;
+} */
+
+/* Akhir file latihan 1-4 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: wheat;
+    text-align: center;
+    margin: 50px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.gallery {
+    width: 80%;
+    margin: 20px auto;
+    border: 10px solid white;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 5px;
+
+
 }

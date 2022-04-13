@@ -134,7 +134,7 @@ body {
     height: 3px;
     background-color: black;
     border-radius: 3px;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 /* hamburger menu animation */
@@ -165,6 +165,34 @@ body {
     opacity: 0;
     transform: scale(0);
 }
+
+/* services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service .icon {
+    font-size: 1.5em;
+}
+
+.service p {
+    font-weight: 100px;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+
+}
+
+.service {
+    background-color: white;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #000;
+}
+
 
 /* responsive brake Point  */
 
@@ -211,7 +239,7 @@ body {
         position: absolute;
         right: 0;
         height: 100vh;
-        top: 1px;
+        top: 0;
         background-color: #ddd;
         width: 100%;
         flex-direction: column;
@@ -230,4 +258,11 @@ body {
 }
 
 
-@media(max-width: 500px) {}
+@media(max-width: 600px) {
+    .header {
+        grid-template-areas:
+            'hero'
+            'features-1'
+            'features-2';
+    }
+}

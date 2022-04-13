@@ -84,7 +84,7 @@ body {
 .menu .brand {
 
     font-size: 1.2em;
-    color: #333;
+    color: rgb(0, 0, 0);
 }
 
 .menu ul {
@@ -108,7 +108,7 @@ body {
 
 /* hamburger menu */
 .menu-toggle {
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 20px;
     justify-content: space-between;
@@ -211,7 +211,7 @@ body {
         position: absolute;
         right: 0;
         height: 100vh;
-        top: 0;
+        top: 1px;
         background-color: #ddd;
         width: 100%;
         flex-direction: column;

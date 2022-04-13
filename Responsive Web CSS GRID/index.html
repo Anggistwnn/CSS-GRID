@@ -29,6 +29,12 @@
         </header>
 
         <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="brand">
                 <h4>Tulus Futsal Merch</h4>
             </div>
@@ -40,7 +46,14 @@
             </ul>
         </nav>
     </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
 
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
 </body>
 
 </html>

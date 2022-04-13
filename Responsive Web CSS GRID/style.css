@@ -168,6 +168,7 @@ body {
 
 /* services */
 .services {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -189,8 +190,24 @@ body {
     padding: 16px;
     text-align: center;
     border: 1px solid #aaa;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: 0 0 5px #000;
+}
+
+/* gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 50px;
+    gap: 10px;
+}
+
+
+.gallery h2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
@@ -259,6 +276,10 @@ body {
 
 
 @media(max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
     .header {
         grid-template-areas:
             'hero'
